@@ -18,7 +18,7 @@ class JSL(Linter):
     cmd = 'jsl -stdin -nologo -nosummary'
     regex = r'''
         # First line is (lineno): type: error message
-        ^\((?P<line>\d+)\):.*?(?P<type>warning|error):\s*(?P<message>.+)$\r?\n
+        ^\((?P<line>\d+)\):.*?(?:(?P<warning>warning)|(?P<error>error)):\s*(?P<message>.+)$\r?\n
 
         # Second line is the line of code
         ^.*$\r?\n
