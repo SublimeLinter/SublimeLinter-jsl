@@ -14,7 +14,7 @@ from SublimeLinter.lint import Linter
 
 
 class JSL(Linter):
-    language = 'javascript'
+    language = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
     regex = r'''
         # First line is (lineno): type: error message
@@ -31,8 +31,6 @@ class JSL(Linter):
     defaults = {
         '-conf:': None
     }
-
-
-class EmbeddedJSL(JSL):
-    language = 'html'
-    selector = 'source.js.embedded.html'
+    selectors = {
+        'html': 'source.js.embedded.html'
+    }
