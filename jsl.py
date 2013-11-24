@@ -1,10 +1,10 @@
 #
-# gjslint.py
+# jsl.py
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
 # Written by Aparajita Fishman
 #
-# Project: https://github.com/SublimeLinter/SublimeLinter-contrib-gjslint
+# Project: https://github.com/SublimeLinter/SublimeLinter-contrib-jsl
 # License: MIT
 #
 
