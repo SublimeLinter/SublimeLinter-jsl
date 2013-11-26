@@ -8,12 +8,17 @@
 # License: MIT
 #
 
+"""This module exports the JSL plugin linter class."""
+
 import re
 
 from SublimeLinter.lint import Linter
 
 
 class JSL(Linter):
+
+    """Provides an interface to the jsl executable."""
+
     language = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
     regex = r'''
