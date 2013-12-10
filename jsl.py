@@ -10,8 +10,6 @@
 
 """This module exports the JSL plugin linter class."""
 
-import re
-
 from SublimeLinter.lint import Linter
 
 
@@ -21,7 +19,7 @@ class JSL(Linter):
 
     language = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
-    regex = r'''
+    regex = r'''(?xi)
         # First line is (lineno): type: error message
         ^\((?P<line>\d+)\):.*?(?:(?P<warning>warning)|(?P<error>error)):\s*(?P<message>.+)$\r?\n
 
@@ -31,7 +29,6 @@ class JSL(Linter):
         # Third line is a caret pointing to the position of the error
         ^(?P<col>[^\^]*)\^$
     '''
-    re_flags = re.VERBOSE | re.IGNORECASE
     multiline = True
     defaults = {
         '-conf:': None
