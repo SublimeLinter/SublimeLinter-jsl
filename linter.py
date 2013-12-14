@@ -18,7 +18,7 @@ class JSL(Linter):
 
     """Provides an interface to the jsl executable."""
 
-    language = ('javascript', 'html')
+    syntax = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
     regex = r'''(?xi)
         # First line is (lineno): type: error message
