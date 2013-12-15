@@ -1,0 +1,6 @@
+SublimeLinter-jsl
+-------------------------------
+
+This linter plugin for SublimeLinter provides an interface to jsl.
+
+For more information, please see https://github.com/SublimeLinter/SublimeLinter-jsl.
