@@ -4,11 +4,12 @@ SublimeLinter-jsl
 This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) provides an interface to [jsl (JavaScript Lint)](http://javascriptlint.com/index.htm). It will be used with files that have the “JavaScript” syntax, or within `<script>` tags in HTML files.
 
 ## Installation
+SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation).
 
 ### Linter installation
 Before installing this plugin, you must ensure that `jsl` is installed on your system. To install `jsl`, download and run the appropriate installer from the [JavaScript Lint download page](http://javascriptlint.com/download.htm).
 
-Now you can proceed to install the SublimeLinter-jsl plugin.
+Once jsl is installed, you can proceed to install the SublimeLinter-jsl plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control](https://sublime.wbond.net/installation) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
