@@ -10,7 +10,7 @@
 
 """This module exports the JSL plugin linter class."""
 
-from SublimeLinter.lint import Linter
+from SublimeLinter.lint import Linter, util
 
 
 class JSL(Linter):
@@ -30,6 +30,7 @@ class JSL(Linter):
         ^(?P<col>[^\^]*)\^$
     '''
     multiline = True
+    error_stream = util.STREAM_STDOUT
     defaults = {
         '-conf:': None
     }
