@@ -1,10 +1,10 @@
 SublimeLinter-jsl
 =========================
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) provides an interface to [jsl (JavaScript Lint)](http://javascriptlint.com/index.htm). It will be used with files that have the “JavaScript” syntax, or within `<script>` tags in HTML files.
+This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [jsl (JavaScript Lint)](http://javascriptlint.com/index.htm). It will be used with files that have the “JavaScript” syntax, or within `<script>` tags in HTML files.
 
 ## Installation
-SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation).
+SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](http://sublimelinter.readthedocs.org/en/latest/installation.html).
 
 ### Linter installation
 Before installing this plugin, you must ensure that `jsl` is installed on your system. To install `jsl`, download and run the appropriate installer from the [JavaScript Lint download page](http://javascriptlint.com/download.htm).
@@ -21,7 +21,7 @@ To install via Package Control, do the following:
 1. When the plugin list appears, type `jsl`. Among the entries you should see `SublimeLinter-jsl`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
-For general information on how SublimeLinter works with settings, please see [Settings](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Settings). For information on generic linter settings, please see [Linter Settings](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Linter-Settings).
+For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.org/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.org/en/latest/linter_settings.html).
 
 You can configure `jsl` options by creating a `jsl` config file and setting the `"conf"` setting to point to that file. To create a `jsl` config file, type the following in a terminal:
 
