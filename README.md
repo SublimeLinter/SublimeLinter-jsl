@@ -7,9 +7,14 @@ This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) pro
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](http://sublimelinter.readthedocs.org/en/latest/installation.html).
 
 ### Linter installation
-Before installing this plugin, you must ensure that `jsl` is installed on your system. To install `jsl`, download and run the appropriate installer from the [JavaScript Lint download page](http://javascriptlint.com/download.htm).
+Before installing this plugin, you must ensure that `jsl 0.3.0` is installed on your system. To install `jsl`, download and install the appropriate package from the [JavaScript Lint download page](http://javascriptlint.com/download.htm).
 
-Once jsl is installed, you can proceed to install the SublimeLinter-jsl plugin if it is not yet installed.
+**NOTE:** Do **not** use the latest development version from svn. This plugin is only compatible with one of the 0.3.0 releases.
+
+### Linter configuration
+In order for `jsl` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
+
+Once `jsl` is installed and configured, you can proceed to install the SublimeLinter-jsl plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control](https://sublime.wbond.net/installation) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
