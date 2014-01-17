@@ -27,7 +27,7 @@ class JSL(Linter):
         ^.*$\r?\n
 
         # Third line is a caret pointing to the position of the error
-        ^(?P<col>[^\^]*)\^$
+        ^(?P<col>[^\^]*)\^
     '''
     multiline = True
     error_stream = util.STREAM_STDOUT
