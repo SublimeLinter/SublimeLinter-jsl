@@ -19,7 +19,7 @@ class JSL(Linter):
 
     syntax = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
-    version_cmd = ''
+    version_args = ''
     version_re = r'^JavaScript Lint (?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 0.3.0, < 0.4.0'
     regex = r'''(?xi)
