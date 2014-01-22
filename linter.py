@@ -19,6 +19,9 @@ class JSL(Linter):
 
     syntax = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
+    version_cmd = ''
+    version_re = r'^JavaScript Lint (?P<version>\d+\.\d+\.\d+)'
+    version_requirement = '>= 0.3.0, < 0.4.0'
     regex = r'''(?xi)
         # First line is (lineno): type: error message
         ^\((?P<line>\d+)\):.*?(?:(?P<warning>warning)|(?P<error>error)):\s*(?P<message>.+)$\r?\n
