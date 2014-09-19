@@ -35,9 +35,6 @@ class JSL(Linter):
     '''
     multiline = True
     error_stream = util.STREAM_STDOUT
-    defaults = {
-        '-conf:': None
-    }
     selectors = {
         'html': 'source.js.embedded.html'
     }
