@@ -30,7 +30,9 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.org/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.org/en/latest/linter_settings.html).
 
-You can configure `jsl` options by creating a `jsl` config file and setting the `"conf"` setting to point to that file. To create a `jsl` config file, type the following in a terminal:
+You can configure `jsl` options in the way you would from the command line, with `jsl.conf` files. For more information, see the [jsl docs](http://www.javascriptlint.com/docs/). The linter plugin does this by searching for a `jsl.conf` file itself in the linted file's working directory, its parent directories, and the user's home directory (`~`).
+
+You may provide a custom config file by setting the linter's `"args"` setting to `["-conf", "/path/to/file"]`. To create a `jsl` config file, type the following in a terminal:
 
 ```
 jsl -help:conf > jsl.conf

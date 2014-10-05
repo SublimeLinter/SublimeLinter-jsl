@@ -19,6 +19,7 @@ class JSL(Linter):
 
     syntax = ('javascript', 'html')
     cmd = 'jsl -stdin -nologo -nosummary'
+    config_file = ('-conf', 'jsl.conf', '~')
     version_args = ''
     version_re = r'^JavaScript Lint (?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 0.3.0, < 0.4.0'
@@ -34,9 +35,6 @@ class JSL(Linter):
     '''
     multiline = True
     error_stream = util.STREAM_STDOUT
-    defaults = {
-        '-conf:': None
-    }
     selectors = {
         'html': 'source.js.embedded.html'
     }
