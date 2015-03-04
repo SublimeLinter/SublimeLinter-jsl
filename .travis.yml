@@ -1,11 +1,17 @@
 language: python
+
 python:
   - "3.3"
-# command to install dependencies
+
 install:
   - pip install flake8
   - pip install pep257
-# command to run tests
+  - gem install travis
+  - gem install overcommit
+
+before_script:
+  - git config --global user.email "travis@travis.ci"
+  - git config --global user.name "Travis CI"
+
 script:
-  - flake8 . --max-line-length=120
-  - pep257 . --ignore=D202
+  - overcommit --run
