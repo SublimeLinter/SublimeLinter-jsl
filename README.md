@@ -2,6 +2,7 @@ SublimeLinter-jsl
 =========================
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-jsl.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-jsl)
+[![Codacy Badge](https://www.codacy.com/project/badge/fe2c9325e1f34ecfb8dbc79012e2c719)](https://www.codacy.com/public/haginsjosh/SublimeLinter-jsl)
 
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [jsl (JavaScript Lint)](http://javascriptlint.com/index.htm). It will be used with files that have the “JavaScript” syntax, or within `<script>` tags in HTML files.
 
