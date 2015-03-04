@@ -53,4 +53,7 @@ Please note that modications should follow these coding guidelines:
 - Code should pass flake8 and pep257 linters.
 - Vertical whitespace helps readability, don’t be afraid to use it.
 
+##### IMPORTANT!
+Also note that this repository uses [overcommit](https://github.com/causes/overcommit) as a validation tool. Before making any changes, please [install overcommit](https://github.com/causes/overcommit#installation) in your local repository.
+
 Thank you for helping out!
